@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<head>
+    <script src='https://code.jquery.com/jquery-3.3.1.min.js'
+        integrity='sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=' crossorigin='anonymous'></script>
+    <script src='https://sdk-cdn.mypurecloud.com/javascript/27.0.0/purecloud-platform-client-v2.min.js'></script>
+    <script type="text/javascript" src="./scripts/create-sequence.js"> </script>
+
+    <link rel="stylesheet" href="./styles/create-sequence-list.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <label for="sequenceName">Sequence Name</label>
+                <input type="text" class="form-control" id="sequenceName">
+            </div>
+            <div class="col">
+                <label name="campaign">Campaign Lists</label>
+                <div id="divCampaign"></div>
+
+            </div>
+            <button id="btnSubmit" class="btn-success" onclick="add()">Submit</button>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
